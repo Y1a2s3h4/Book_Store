@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth;
+
+}
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #f8f0ee !important;
@@ -20,34 +24,26 @@ body {
   place-content: center;
   min-height: 55vh;
   animation: heading1 1.5s;
-
   /* position: absolute;
     top: 50%;
     left: 40%;
     transform: translate(-30%, 15rem); */
 }
-.heading2 {
-  margin-top: 19rem;
-  font-size: 4rem;
-  letter-spacing: 8px;
-  word-spacing: 4px;
-  display: grid;
-  place-content: center;
-  background-image: linear-gradient(to right, #2748a0, #53d0ec);
-  -webkit-background-clip: text;
-  color: transparent;
-}
+
 @keyframes heading1 {
   0% {
-    margin-left: -600px;
-    opacity: 0;
+    /* margin-left: -600px; */
+  transform: translateX(-600px);  
+  opacity: 0;
   }
   70% {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+  transform: translateX(2rem);  
   }
   100% {
-    margin-left: 0px;
-    opacity: 1;
+    /* margin-left: 0px; */
+  transform: translateX(0px);  
+  opacity: 1;
   }
 }
 
@@ -69,8 +65,48 @@ body {
     opacity: 1;
   }
 }
-.ml-custom {
+.heading2 {
+  margin-top: 19rem;
+  font-size: 4rem;
+  letter-spacing: 8px;
+  word-spacing: 4px;
+  display: grid;
+  place-content: center;
+  background-image: linear-gradient(to right, #2748a0, #53d0ec);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.heading3{
+  margin-top: 20rem;
+  font-size: 4rem;
+  letter-spacing: 8px;
+  word-spacing: 4px;
+  display: grid;
+  place-content: center;
+  color: rgb(255, 255, 255);
+}
+.heading4{
+  margin-top: 19rem;
+  font-size: 4rem;
+  letter-spacing: 8px;
+  word-spacing: 4px;
+  display: grid;
+  place-content: center;
+  background-image: linear-gradient(to right, #2748a0, #53d0ec);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.ml-45 {
   margin-left: 45%;
+}
+/* .w-35{
+  width: 35%;
+} */
+/* .ml-custom {
+  margin-left: 32%;
+} */
+.request-centent{
+  margin-top: 10rem;
 }
 .btn1 {
   border-radius: 100px;
@@ -85,6 +121,7 @@ body {
   border-radius: 20px;
   padding: 0.5rem 1.5rem;
 }
+
 @keyframes btn {
   0% {
     margin-left: -600px;
@@ -108,12 +145,10 @@ body {
 }
 
 .section-shape1 {
-  height: 94vh;
+  height: 100vh;
   background: linear-gradient(
       to right bottom,
-      rgba(39, 71, 160, 0.767),
-      rgba(34, 205, 267, 0.767),
-      rgba(83, 208, 236, 0.767)
+      rgba(39, 71, 160, 0.767), rgba(34, 205, 267, 0.767),rgba(83, 208, 236, 0.767)
     ),
     url(../img/bg-img.jpg) no-repeat;
 
@@ -124,10 +159,35 @@ body {
 .section-shape2 {
   position: absolute;
   z-index: -2 !important;
-  margin-top: -16.5rem !important;
+  margin-top: -15.5rem !important;
   background: #f8f0ee;
   width: 100%;
-  height: 203vh;
+  height: 221vh;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+
+}
+.section-shape3 {
+  position: absolute;
+  z-index: -3 !important;
+  top: 270.7% !important;
+  background: linear-gradient(
+      to right bottom,
+      rgba(39, 71, 160, 0.767), rgba(34, 205, 267, 0.767),rgba(83, 208, 236, 0.767)
+    ),
+    url(../img/request-img.jpg) no-repeat  fixed;
+  width: 100%;
+  height: 100vh;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+}
+.section-shape4 {
+  position: absolute;
+  top: 377% !important;
+  z-index: -4 !important;
+  margin-top: -17.5rem !important;
+  background: #f8f0ee;
+  width: 100%;
+  height: 128vh;
+
 }
 .card {
   max-width: 100%;
@@ -136,12 +196,13 @@ body {
   overflow: hidden;
 }
 .card-img-top:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) !important;
   transition: transform 0.4s !important;
 }
-.card-body{
+.card-body {
   margin: 1rem 1rem -1.5rem 1rem !important;
 }
+
 /*.img{
     position: absolute;
     top: 0%;
@@ -158,6 +219,31 @@ body {
 .pointer {
   cursor: pointer !important;
   color: #fff !important;
+}
+.form-control{
+  border-radius: 5px !important;
+}
+.back-to-top{
+  /* width:80px;
+  height:80px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(39, 71, 160, 0.767), rgba(34, 205, 267, 0.767),rgba(83, 208, 236, 0.767)
+  );
+  border-radius: 50%; */
+  position: fixed;
+  top: 85%;
+  left: 93%;
+  padding-top: .56rem;
+  padding-left: 1.4rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.back-to-top a{
+  background-image: linear-gradient(to right, #2748a0, #53d0ec);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
 }
 /* 
 Dark blue: #2748A0 
