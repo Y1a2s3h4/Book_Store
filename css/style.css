@@ -159,17 +159,17 @@ body {
 .section-shape2 {
   position: absolute;
   z-index: -2 !important;
-  margin-top: -15.5rem !important;
+  margin-top: -11.5rem !important;
   background: #f8f0ee;
   width: 100%;
-  height: 221vh;
+  height: 240vh;
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 
 }
 .section-shape3 {
   position: absolute;
   z-index: -3 !important;
-  top: 270.7% !important;
+  top:295.7% !important;
   background: linear-gradient(
       to right bottom,
       rgba(39, 71, 160, 0.767), rgba(34, 205, 267, 0.767),rgba(83, 208, 236, 0.767)
@@ -181,9 +181,9 @@ body {
 }
 .section-shape4 {
   position: absolute;
-  top: 377% !important;
+  top: 380% !important;
   z-index: -4 !important;
-  margin-top: -17.5rem !important;
+  margin-top: -8rem !important;
   background: #f8f0ee;
   width: 100%;
   height: 128vh;
@@ -239,7 +239,8 @@ body {
   font-size: 2.5rem;
   cursor: pointer;
 }
-.back-to-top a{
+.back-to-top a:link,
+.back-to-top a:visited{
   background-image: linear-gradient(to right, #2748a0, #53d0ec);
   -webkit-background-clip: text;
   color: transparent;
